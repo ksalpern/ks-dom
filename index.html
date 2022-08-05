@@ -10,26 +10,28 @@
 </head>
 <body>
     <header class="header">
-        <button class="header__button">
+        <button class="header__button" menu-btn="open">
             >
         </button>
-        <a class="header__title" href="#">Cartoons</a>
+        <a class="header__title" href="./">Cartoons</a>
     </header>
     <main class="main">
-        <article class="main__text"></article>
+        <article class="main__text" main-content>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, eos sed explicabo ex tempore beatae alias maxime sunt porro veritatis eius harum ab, laborum reprehenderit aliquam aspernatur, laudantium a vel odio nostrum vitae accusamus doloribus consequuntur saepe. Labore reprehenderit corporis voluptas consequatur at, similique odio praesentium ullam voluptatem. Cum possimus tempora aliquid earum error doloribus velit quos, id dolorum mollitia dicta sit architecto dolore repudiandae, non impedit omnis vero nobis commodi amet animi quam voluptatum provident. Quidem, quibusdam tempora.</p>
+        </article>
     </main>
-    <div class="side-menu">
-        <button class="side-menu__btn">
+    <div class="side-menu side-menu--hidden" side-menu="closed">
+        <button class="side-menu__btn" side-menu-btn="close" >
             >
         </button>
-        <nav class="side-menu__nav nav"></nav>
+        <nav class="side-menu__nav nav" side-menu-content ></nav>
     </div>
-    <div class="modal">
+    <div class="modal modal-hidden" modal="closed">
         <button class="modal__button">></button>
         <div class="modal__content">
-            <img class="modal__content-img" src="" alt="">
+            <img class="modal__content-img" modal-img src="" alt="">
         </div>
     </div>
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
