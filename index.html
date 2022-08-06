@@ -9,29 +9,23 @@
     <title>ks dom</title>
 </head>
 <body>
-    <header class="header">
-        <button class="header__button" menu-btn="open">
-            >
-        </button>
-        <a class="header__title" href="./">Cartoons</a>
+    <header class="header" id="header">
+        <a class="header__title" href="#">Cartoons</a>
+       <div class="toggle" id="toggle"></div>
+       <nav class="navbar" id="navbar">
+        <ul class="navbar__items">
+            <li class="navbar__item">
+               <span class="arrow"><</span> <a href="#" class="navbar__item-link">Adventure time</a>
+            </li>
+            <li class="navbar__item">
+                <span class="arrow"><</span> <a href="#" class="navbar__item-link">Gravity Falls</a>
+            </li>
+            <li class="navbar__item">
+                <span class="arrow"><</span> <a href="#" class="navbar__item-link">Rick and Morty</a>
+            </li>
+        </ul>
+       </nav>
     </header>
-    <main class="main">
-        <article class="main__text" main-content>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, eos sed explicabo ex tempore beatae alias maxime sunt porro veritatis eius harum ab, laborum reprehenderit aliquam aspernatur, laudantium a vel odio nostrum vitae accusamus doloribus consequuntur saepe. Labore reprehenderit corporis voluptas consequatur at, similique odio praesentium ullam voluptatem. Cum possimus tempora aliquid earum error doloribus velit quos, id dolorum mollitia dicta sit architecto dolore repudiandae, non impedit omnis vero nobis commodi amet animi quam voluptatum provident. Quidem, quibusdam tempora.</p>
-        </article>
-    </main>
-    <div class="side-menu side-menu--hidden" side-menu="closed">
-        <button class="side-menu__btn" side-menu-btn="close" >
-            >
-        </button>
-        <nav class="side-menu__nav nav" side-menu-content ></nav>
-    </div>
-    <div class="modal modal-hidden" modal="closed">
-        <button class="modal__button">></button>
-        <div class="modal__content">
-            <img class="modal__content-img" modal-img src="" alt="">
-        </div>
-    </div>
-    <script type="module" src="./scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
